@@ -58,7 +58,7 @@ This MicroHack scenario walks through several Azure Virtual Network Manager scen
 
 The main objective is that after this Microhack you will be able to:
 
-- -Know how to build and deploy several Network topologies with AVNM
+- Know how to build and deploy several Network topologies with AVNM
 - Understand the power of AVNM and how this differs from 'classic' Network Management
 - Understand how Security admin rules can help you maintain a secure foundation in your VNet topology
 
@@ -67,7 +67,7 @@ The main objective is that after this Microhack you will be able to:
 Several prerequisites are required:
 
 - To perform this Microhack an Azure subscription is required, if you don't have one, I recommend to start a free Azure subscription with a start credit see [here](https://azure.microsoft.com/en-us/free/search/).
-Dont perform these labs in your production environment!
+Don't perform these labs in your production environment!
 
 - Having basic knowledge about Azure networking and understanding concepts as Virtual Networks, VNet Peering, Hub-Spoke, mesh patterns, Network Security Groups and security rules as wel as Bastion and VM's is very useful.
 
@@ -81,7 +81,7 @@ The Microhack consists of a landing zone to accomodate the different challenges,
   - 3 Spoke RG's, Spoke 1 to 3 located in *North Europe* region, with corresponding subnets 10.11.0.0/16, 10.12.0.0/16 and 10.13.0.0/16 each of them configured with a Virtual machine.
     - 2 Spoke RG's, Spoke 4 & 5 located in *West Europe* region with corresponding subnets 10.14.0.0/16 and 10.15.0.0/16
   - You can see that every VNet has a tag location:region (either northeurope or westeurope).
-  - In the hub is an Azure Bastion deployed, to connect secure the Virtual Machines.
+  - In the hub is an Azure Bastion deployed, to establish a secure connection to the Virtual Machines.
   - All spokes are also deployed with a Network Security Group and a Virtual Machine.
   - In the Hub an Virtual Network Manager instance is deployed.
 
@@ -89,7 +89,7 @@ The Microhack consists of a landing zone to accomodate the different challenges,
 
 ## Challenge 1 - Deploy and verify the Microhack Landingzone
 ### Goal ###
-The goal of this challenge is to deploy the microhack landing zone. Now this could be an easy task as we provided a Terraform deployment of the landing zone for you.
+The goal of this challenge is to deploy the microhack landing zone. Now this might be an easy task as we provide a Terraform deployment of the landing zone for you. The challenge is to deploy this Terraform code in your tenant that will build the Lab environment.
 
 ### Actions ###
 There are two tasks to complete in this challenge:
@@ -104,9 +104,9 @@ https://learn.microsoft.com/en-us/azure/devops/repos/git/clone?view=azure-devops
 https://developer.hashicorp.com/terraform/cli/commands
 
 ### Sucess Criteria
+You have succesfully completed this challenge when:
 - You have succesfully deployed the Microhack Landingzone
 - You have verified all deployed components
-- youn have checked if you could logon to one of the VM's
 
 ### Challenge 1 Solution - Spoilerwarning
 [Solution Steps](./walkthrough/challenge-1/solution.md)
