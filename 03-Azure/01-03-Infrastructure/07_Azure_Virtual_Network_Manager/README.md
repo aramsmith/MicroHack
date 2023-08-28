@@ -214,6 +214,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-me
 https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-deployments
 
 ### Success Criteria
+You have successfully achieved this challenge when:
 - You have successfully configured a Global Mesh model with 3 network groups
 - You have successfully deployed the Global Mesh configuration
 - You have verified the Global Mesh config by checking connectivity.
