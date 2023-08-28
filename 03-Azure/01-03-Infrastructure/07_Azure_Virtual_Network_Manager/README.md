@@ -179,9 +179,10 @@ https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-create-hu
 https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-deployments
 
 ### Success Criteria
+You have succefully completed this Challenge when:
 - You have successfully configured a Hub-Spoke model with the Hub VNet as the Hub and the two network groups as spokes.
 - You have successfully deployed the Hub-Spoke configuration
-- You have verified the Hub-SPoke config by checking the peerings.
+- You have verified the Hub-Spoke config by checking the peerings.
 
 ### Challenge 3 Solution - Spoilerwarning
 [Solution Steps](./walkthrough/challenge-3/solution.md)
