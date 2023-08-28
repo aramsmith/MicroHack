@@ -152,7 +152,7 @@ You have achieved this challenge when:
 [Solution Steps](./walkthrough/challenge-2/solution.md)
 
 ## Challenge 3: Create Hub-Spoke topology
-Hub and spoke topology is recommended when you're deploying central infrastructure services (like connectivity, DNS, Bastion, etc) in a hub virtual network that are shared by spoke virtual networks. This topology can be more efficient than having these common components in all spoke virtual networks.
+Hub and Spoke topology is recommended when you're deploying central infrastructure services (like connectivity, DNS, Bastion, etc) in a hub virtual network that are shared by spoke virtual networks. This topology will be more efficient than having these common components in all spoke virtual networks.
 
 ### Goal
 In this challenge there are two tasks:
@@ -169,7 +169,7 @@ After the creation you can deploy the configuration.
 |-|-|
 |Direct Connectivity| Select the checkbox if you want to enable connectivity *within the network group.* This setting allows spoke virtual networks in the network group in the *same region* to communicate with each other directly.|
 |Global Mesh| If you want to be able to enable connectivity between network groups and therefore all spokes in *different regions* aka *full mesh*|
-|Hub as gateway| If you have deployed a gateway in the Hub (fi. an Virtual Network gateway for S2S VPN or Express Route), you can enable connectivity from spokes to the Gateway|
+|Hub as gateway| If you have deployed a gateway in the Hub (fi. an Virtual Network gateway for S2S VPN or Express Route), you can enable connectivity from spokes to the Gateway (out of scope for this microhack)|
 
 When you have saved your configuration you can proceed to the next step: Deploying it.
 
