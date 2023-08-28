@@ -6,12 +6,12 @@ This walkthrough will walk you through the steps to deploy the AVN Microhack lan
 
 ### Task 1 - Deploy the lab
 
-We are going to use a predefined Terraform template to deploy the base environment. It will be deployed in to *your* Azure subscription. As stated the locations for this deployment will be in North- and West Europe. If you are savy in Terraform you can alter these in the *variables.tf* file in the parameters *location1* and *location2*.
+You will use a predefined Terraform template to deploy the base environment. It will be deployed in to *your* Azure subscription. As stated the locations for this deployment will be in North- and West Europe. If you are experienced in Terraform (or coding) you can alter these in the *variables.tf* file in the parameters *location1* and *location2*.
 
 To start the terraform deployment, follow the steps listed below:
 
 - Login to Azure cloud shell [https://shell.azure.com/](https://shell.azure.com/)
-- Ensure that you are operating within the correct subscription via:
+- Ensure that you are operating within the correct subscription via (Azure CLI):
 
 `az account show`
 
@@ -38,7 +38,7 @@ If you don't have the right subscription, select the right one with the followin
 `terraform apply`
 
 - Choose a suitable *password* to be used for your Virtual Machines administrator account.
-- Remember the username is: **AzureAdmin**
+- Remember the username is: ***AzureAdmin***
 - When prompted, confirm with a **yes** to start the deployment
 - Wait for the deployment to be completed. This will take around 10 minutes.
 
