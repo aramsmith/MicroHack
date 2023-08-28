@@ -60,7 +60,7 @@ Layout should look like this:
 
 ![Landingzone Overview](./images/D1T2-verifylab.jpg)
 
-Credentials are identical for all VMs, as follows:
+Credentials are identical for all VMs:
 
 - User name: **AzureAdmin**
 - Password: *your password* that you have chosen in the deployment.
