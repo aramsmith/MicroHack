@@ -190,7 +190,11 @@ You have succefully completed this Challenge when:
 ## Challenge 4: Create Global Mesh Topology
 Next to a Hub-Spoke model is the (Global) Mesh model.
 When a mesh topology is deployed, all virtual networks have direct connectivity with each other. They don't need to go through other hops (such as the Hub) on the network to communicate. Mesh topology is useful when all the virtual networks need to communicate directly with each other.
-Mesh networks come in tweo flavors: Mesh, means connectivity between spokes in the same region. Global Mesh means connectivity between all spokes in all regions.
+Mesh networks come in tweo flavors: 
+
+Mesh, means connectivity between spokes in the same region. 
+
+Global Mesh means connectivity between all spokes in all regions.
 
 New with Azure Virtual Network Manager is the fact that Mesh networks won't be reflected in network peerings, the Direct Connect and Mesh configuration is maintained at a lower level.
 
