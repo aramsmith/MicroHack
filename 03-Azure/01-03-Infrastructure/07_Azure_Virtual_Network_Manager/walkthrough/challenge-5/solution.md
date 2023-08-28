@@ -54,7 +54,7 @@ You can make additional rules in this ruleset if required.
 
 #### Result
 The result should look like this:
-![C4T3SecAdminResult](/images/C4T3SecAdminResult.jpg)
+![C4T3SecAdminResult](./images/C4T3SecAdminResult.jpg)
 
 - Hit *Add* and *Review and Create*
 You can check that in Network Manager *Configurations* an additional *Security - Admin Rules* configuration is added.
