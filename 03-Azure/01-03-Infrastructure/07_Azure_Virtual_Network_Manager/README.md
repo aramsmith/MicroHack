@@ -121,7 +121,8 @@ A virtual network can join a network group in two types. The two types are group
 
 A *Static* membership means that you manually configure the group by selecting the VNets that need to be added in one group.
 
-*Dynamic* membership gives you the flexibility of selecting multiple virtual networks at scale if they meet the conditional statements you have defined and based in an Azure Policy. Dynamic membership is useful for scenarios where you have large number of virtual networks, or if membership is dictated by a condition instead of an explicit list (f.i. dynamically group vnets that are based in NorthEurope.)
+A *Dynamic* membership gives you the flexibility of selecting multiple virtual networks at scale if they meet the conditional statements you have defined and based in an Azure Policy. Dynamic membership is useful for scenarios where you have large number of virtual networks, or if membership is dictated by a condition instead of an explicit list (f.i. dynamically group vnets that are based in NorthEurope.)
+The advantage of Dynamic groups is the fact that when a new VNet is created that complies to the dynamic group criteria the VNet will be automatically added to that network group (by Azure Policy) and any AVNM configuration this group is member of will be applied.
   
 ### Goal
 This challenge has two tasks:
@@ -129,12 +130,12 @@ This challenge has two tasks:
 - Task 2: Create a *Dynamic* network group 
 - Task 3: Create a Hub network group, which is a static group with only the Hub network.
 
-Task 3 may seems strangs and is not required to build the Hub-Spoke configuration, but will be usefull if you reach Chalenge 4 - Global Mesh Topology.
+Task 3 may seems strange and is not required to build the Hub-Spoke configuration, but is required for Chalenge 4 - Global Mesh Topology.
 
 ### Actions 
 
 Task 1: Deploy a Static Network Group with **Spokes 4 & 5 in West Europe** called *SpokeGroupWE*.
-Task 2: Deploy a Dynamic Network group with **spokes 1 to 3 in North Europe.** called *SpokeGroupNE* while you make use of a policy and name this one *SpokeGroupNEpolicy*
+Task 2: Deploy a Dynamic Network group with **spokes 1 to 3 in North Europe.** called *SpokeGroupNE* while you make use of a policy and name this one *SpokeGroupNEpolicy*.
 Task 3: Create a Static group with only the Hub VNet called *HubGroup*.
 
 ### Learning Resources
