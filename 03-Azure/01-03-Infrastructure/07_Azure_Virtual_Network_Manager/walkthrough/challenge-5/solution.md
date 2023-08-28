@@ -83,13 +83,13 @@ When the configuration is deployed it should look like this:
 
 Now you can check if the Security Admin Configuration works, you configured a deny on RDP 3389 protocol incoming on the West Europe Network group and therefore all servers that are located in this network group.
 
-1st check you can do is look at the *Networking* configuration of the *Spoke5-VM1*
+The 1st check you can do is look at the *Networking* configuration of the *Spoke5-VM1*
 This will show you the additional Security Admin Rule that applies to that VM:
 
 ![C4T5Result0](./images/C4T5Result0.jpg)
 You can see the additional deny rule on port 3389.
 
-2nd check is to actually establish an RDP connection.
+The 2nd check is to actually establish an RDP connection.
 - We go back to the tab with the *Hub-VM1* desktop
 - Open the Remote Desktop Connection app and try to reconnect to the *Spoke5-VM1* (10.15.0.4)
 - If the configuration is properly applied the RDP connection cannot be established.
