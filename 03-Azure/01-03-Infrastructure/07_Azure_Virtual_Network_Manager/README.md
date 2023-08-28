@@ -125,23 +125,23 @@ A *Dynamic* membership gives you the flexibility of selecting multiple virtual n
 The advantage of Dynamic groups is the fact that when a new VNet is created that complies to the dynamic group criteria the VNet will be automatically added to that network group (by Azure Policy) and any AVNM configuration this group is member of will be applied.
   
 ### Goal
-This challenge has two tasks:
-- Task 1: Create a *Static* network group
-- Task 2: Create a *Dynamic* network group 
+This challenge has three goals to achieve:
+- Create a *Static* network group.
+- Task 2: Create a *Dynamic* network group.
 - Task 3: Create a Hub network group, which is a static group with only the Hub network.
 
 Task 3 may seems strange and is not required to build the Hub-Spoke configuration, but is required for Chalenge 4 - Global Mesh Topology.
 
 ### Actions 
-
-Task 1: Deploy a Static Network Group with **Spokes 4 & 5 in West Europe** called *SpokeGroupWE*.
-Task 2: Deploy a Dynamic Network group with **spokes 1 to 3 in North Europe.** called *SpokeGroupNE* while you make use of a policy and name this one *SpokeGroupNEpolicy*.
-Task 3: Create a Static group with only the Hub VNet called *HubGroup*.
+- Task 1: Deploy a Static Network Group with **Spokes 4 & 5 in West Europe** called *SpokeGroupWE*.
+- Task 2: Deploy a Dynamic Network group with **spokes 1 to 3 in North Europe.** called *SpokeGroupNE* while you make use of a policy and name this one *SpokeGroupNEpolicy*.
+- Task 3: Create a Static group with only the Hub VNet called *HubGroup*.
 
 ### Learning Resources
 https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-network-groups
 
 ### Success Criteria
+You have achieved this challenge when:
 - You have deployed 2 network groups
 - One static with spokes 4 & 5 named  *SpokeGroupWE*
 - One Dynamic with Spokes 1 to 3 named *SpokeGroupNE*
