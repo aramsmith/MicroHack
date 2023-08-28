@@ -21,12 +21,12 @@ If you look at the *SpokeGroupWE* network group you will see under the column *G
 
 ### Task 2: Dynamic Network Group
 
-As stated before a Dynamic Network group consist of an Azure policy that adds the Vnets based on a condition or attribute such as name, tag or other. We want to add all spoke VNet's that are located in North Europe to a Network Group, so we define a policy based on name and based on the location tag.
+As stated before a Dynamic Network group consist of an Azure policy that adds the VNets based on a condition or attribute such as name, tag or other. You need to add all spoke VNet's that are located in North Europe to a Network Group, therefor you define a policy based on name and based on the location tag.
 
 In the Network Manager go to the *Network Groups* section and create a new network group named *SpokeGroupNE*.
 
-Open the new networkgroup by selecting it and select *Create Azure Policy* under the 'Create policy to dynamically add members' section.
-Now we want to select all spokes that are located in North Europe but *not* the hub-vnet.
+Open the new networkgroup by selecting and select *Create Azure Policy* under the 'Create policy to dynamically add members' section.
+Now select all spokes that are located in North Europe but *not* the hub-vnet.
 
 - Provide a name to the policy f.i. *SpokeGroupNEpolicy*
 - Select Parameter *Name*,  Operator *Contains* and Condition *Spoke*
@@ -40,18 +40,17 @@ This policy will combine all networks with the word 'Spoke' in their name AND is
 
 ![C1T2-policyvnet](./images/C1T2-Preview.jpg)
 
-- hit *Close* and then *Save*
-The Policy will be created.
+- hit *Close* and then *Save* and the Policy will be created.
 #### Result
 
 If you look at the *SpokeGroupNE* network group you will see under the column *Group Members* 3 members. If you click on the 3 you will see the members *spoke1-vnet* to *spoke3-vnet*
-**If you don't see these member immediately, wait for a few minutes!** (it takes some time before policies apply, hit *refresh* several times).
+**If you don't see these members immediately, wait for a few minutes!** (it takes some time before policies apply, hit *refresh* several times).
 
 ![c1t2-result](./images/C1T2-verify.jpg)
 
-### Task 2: Hub Static Network Group
+### Task 3: Hub Static Network Group
 
-Further in this microhack we will build a Mesh topology, for that we need to have an additional Static Network Group called *Hub* with only the hub network, this enables us to leverage the Bastion functionality in the Mesh topology.
+Further in this microhack (Challenge 4) you will build a Mesh topology, for that you need to have an additional Static Network Group called *Hub* with only the hub network, this enables you to leverage the Bastion functionality in the Mesh topology.
 
 - In the Network Manager go to the *Network Groups* section and create a new network group named *HubGroup*.
 - Open the new networkgroup by selecting it and select *Add virtual Networks* under the 'Manually add members' section.
