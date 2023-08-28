@@ -60,7 +60,7 @@ The result should look like this:
 You can check that in Network Manager *Configurations* an additional *Security - Admin Rules* configuration is added.
 
 ### Task 4: Deploy Security Admin Configuration
-Next step is to deploy the Security Admin Configuration, like we did with the topology configurations.
+Next step is to deploy the Security Admin Configuration, like you did with the topology configurations.
 To do this:
 
 - In Network Manager go to *Deployments*
@@ -79,7 +79,7 @@ Configuration should look like this:
 #### Result
 
 When the configuration is deployed it should look like this:
-![C4T4-Result](/images/C4T4-Result.jpg)
+![C4T4-Result](./images/C4T4-Result.jpg)
 
 Now you can check if the Security Admin Configuration works, you configured a deny on RDP 3389 protocol incoming on the West Europe Network group and therefore all servers that are located in this network group.
 
