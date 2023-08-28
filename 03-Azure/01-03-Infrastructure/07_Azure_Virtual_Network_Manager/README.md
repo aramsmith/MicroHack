@@ -53,7 +53,7 @@ see [AVNM overview](https://learn.microsoft.com/en-us/azure/virtual-network-mana
 For a deep dive of AVNM I recommend to watch the youtube video from my esteemed colleague John Savill, [Azure Virtual Network Manager Deep Dive](https://youtu.be/qNn83S55WHQ)
 
 ## Objectives
-The purpose of this microhack is it to get familiar and gain hands-on experience with the new Azure Virtual Network Manager (AVNM). Although AVNM is still in public preview, features probably won't be changed.
+The purpose of this microhack is it to get familiar with, and gain hands-on experience with the new Azure Virtual Network Manager (AVNM). Although AVNM is still in public preview, features probably won't be changed.
 This MicroHack scenario walks through several Azure Virtual Network Manager scenarios. The objective of this Microhack is to actually deploy an AVNM configuration and perform several challenges such as: creating network groups, deploying Hub-Spoke, Mesh, Hub-Spoke with Direct connectivity and security rules with a new concept as 'Always Allow' rules.
 
 The main objective is that after this Microhack you will be able to:
