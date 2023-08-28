@@ -28,9 +28,9 @@ You should now have in the *configurations* section a configuration with the nam
 *Be aware that this is just the configuration, you haven't deployed it yet!*
 
 ## Task 2: Deploy Hub-Spoke Configuration
-Before you deploy the configuration you can proof by a test that there are no peerings.
+Before you deploy the configuration you can verify that there are no peerings.
 This can be checked in two ways:
-- Check if there are no existing peerings between hub and spokes
+- Check if there are no existing peerings between hub and spokes by checking then *Peerings* section in the Hub VNet.
 - Try to connect with Bastion to spoke VM's which wont work if there are no peerings. 
 
 To check if there are no peering's see the *peerings* section of the *hub-vnet*. This should show no peering's:
