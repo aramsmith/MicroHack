@@ -113,15 +113,15 @@ You have succesfully completed this challenge when:
 
 ## Challenge 2: Create Network groups
 Within Azure Networking the *Network Group* is a new concept, introduced by AVNM.
-A network group is global container that includes a set of virtual network resources from any region. Then, configurations are applied to target the network group, which applies the configuration to all members of the group.
+A network group is global container that includes a set of virtual network resources from any region. Configurations are applied to target the network group, which applies the configuration to all members of the group.
 
 Group membership is a many-to-many relationship, such that one group holds many virtual networks and any given virtual network can participate in multiple network groups. As part of a network group, the virtual network will receive any configurations applied to the group and deployed to the virtual networks region.
 
-A virtual network can be set to join a network group in multiple ways. The two types are group memberships are *static* and *dynamic* memberships.
+A virtual network can join a network group in two types. The two types are group memberships are *static* and *dynamic* memberships.
 
-A static membership means that you manually configure the group by selecting the VNets that need to be added in one group.
+A *Static* membership means that you manually configure the group by selecting the VNets that need to be added in one group.
 
-Dynamic membership gives you the flexibility of selecting multiple virtual networks at scale if they meet the conditional statements you have defined and based in an Azure Policy. Dynamic membership is useful for scenarios where you have large number of virtual networks, or if membership is dictated by a condition instead of an explicit list (f.i. dynamically group vnets that are based in NorthEurope.)
+*Dynamic* membership gives you the flexibility of selecting multiple virtual networks at scale if they meet the conditional statements you have defined and based in an Azure Policy. Dynamic membership is useful for scenarios where you have large number of virtual networks, or if membership is dictated by a condition instead of an explicit list (f.i. dynamically group vnets that are based in NorthEurope.)
   
 ### Goal
 This challenge has two tasks:
