@@ -223,7 +223,7 @@ You have successfully achieved this challenge when:
 [Solution Steps](./walkthrough/challenge-4/solution.md)
 
 ## Challenge 5: Security Admin Configuration
-A security admin Configuration allows you to enforce security policies on resources that match a rule's condition set. For example, you can define a security admin rule to block network traffic to virtual networks over a high-risk port.
+A Security Admin Configuration allows you to enforce security policies on resources that match a rule's condition set. For example, you can define a security admin rule to block network traffic to virtual networks over a high-risk port.
 These rules only apply to resources within the scope of the Azure Virtual Network Manager instance.
 
 Security admin rules are evaluated before network security rules. Depending on the type of security admin rule you create, they can interact differently with network security group rules. When this happens, organizations can set enforced security policies alongside the teams' network security groups that address their own use cases. 
@@ -252,7 +252,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-enforcem
 https://learn.microsoft.com/en-us/azure/virtual-network-manager/how-to-block-network-traffic-portal
 
 ### Success Criteria
-You have obtained success is:
+You have obtained success if:
 - You have changed the network configuration back to Hub-Spoke model.
 - You created and deployed a Security Admin Configuration
 
